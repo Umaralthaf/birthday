@@ -4,16 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block; /* Optional: removes any bottom margin/padding */
-        }
-    </style>
+    <title>SAMPLE 1</title>
 </head>
 <body>
-    <img src="Munni.jpg" alt="MyLove"/> 
+    <div class="birth">
+        <form id="h1">
+            <input type="password" id="pass" placeholder="ENTER ">
+           <br><br>
+            <button type="submit" onclick="handleSubmit()"><tt>I LOVE UH</tt></button>
+        </form>
+    </div>
+
+    <script>
+        function handleSubmit() {
+         
+          var password = document.getElementById('pass').value;
+          
+        
+          var correctPassword = 'VICKY'; // Replace with your password
+          
+          
+          if (password === correctPassword) {
+            
+
+            window.location.href = 'index1.html';
+          } 
+          else if(password === ""){
+            
+            alert('NANNU MARCHIPOYAVA ??');
+          
+          }
+
+          else{
+            alert("CORRECT GA TYPE CHEYY");
+        }}
+    </script>
+
 </body>
 </html>
