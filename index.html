@@ -8,16 +8,16 @@
 </head>
 <body>
     <div class="birth">
-        <form id="h1">
+        <form id="h1" onsubmit="return handleSubmit(event)" >
             <input type="password" id="pass" placeholder="ENTER ">
            <br><br>
-            <button type="submit" onclick="handleSubmit()"><tt>I LOVE UH</tt></button>
+            <button type="submit"><tt>I LOVE UH</tt></button>
         </form>
     </div>
 
     <script>
-        function handleSubmit() {
-         
+        function handleSubmit(event) {
+         event.preventDefault();
           var password = document.getElementById('pass').value;
           
         
