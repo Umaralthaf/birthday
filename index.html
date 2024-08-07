@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,38 +10,32 @@
 </head>
 <body>
     <div class="birth">
-        <form id="h1" onsubmit="return handleSubmit(event)" >
-            <label for="pass" ><tt>Password: </tt></label>
-            <input type="password" id="pass" placeholder="ENTER ">
-           <br><br>
+        <form id="h1" onsubmit="return handleSubmit(event)">
+            <label for="pass"><tt>Password: </tt></label>
+            <input type="password" id="pass" placeholder="ENTER">
+            <br><br>
             <button type="submit"><tt>I LOVE UH</tt></button>
         </form>
     </div>
 
     <script>
         function handleSubmit(event) {
-         event.preventDefault();
-          var password = document.getElementById('pass').value;
-          
-        
-          var correctPassword = 'VICKY'; // Replace with your password
-          
-          console.log('Entered Password is:', password) ;
-          if (password === correctPassword) {
-            setTimeout(function() {
+            event.preventDefault();
+            var password = document.getElementById('pass').value;
+            var correctPassword = 'VICKY'; // Replace with your password
 
-            window.location.href = 'index1.html';
-             }, 100);
-          } 
-          else if(password === ""){
-            
-            alert('NANNU MARCHIPOYAVA ??');
-          
-          }
+            console.log('Entered Password is:', password);
 
-          else{
-            alert("CORRECT GA TYPE CHEYY");
-        }}
+            if (password === correctPassword) {
+                setTimeout(function() {
+                    window.location.href = 'index1.html';
+                }, 100);
+            } else if (password === "") {
+                alert('NANNU MARCHIPOYAVA ??');
+            } else {
+                alert("CORRECT GA TYPE CHEYY");
+            }
+        }
     </script>
 
 </body>
