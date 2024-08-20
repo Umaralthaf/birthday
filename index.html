@@ -42,8 +42,8 @@
       label{
           position:absolute;
           top:35%;
-          left:33%;
-          transform:translate(35%,33%);
+          left:20%;
+          transform:translate(35%,20%);
       }       
        
         button{
@@ -107,14 +107,14 @@
         function handleSubmit(event) {
             event.preventDefault();
             var password = document.getElementById('dates').value;
-            var correctPassword = '2022-03-20'; // Replace with your password
+            var correctPassword = '2022-03-20'; 
 
             console.log('Entered Password is:', password);
 
             if (password === correctPassword) {
                 window.location.href = 'index1.html';
             } else if (password === "") {
-                alert('When Did Our Journey Started?\nBy The Way,I Love You Too..');
+                alert('When Did Our Journey Started?\nBy The Way, I Love You Too..');
             } else {
                 alert("Did You Forget Me!?");
             }
