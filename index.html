@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vicky Bhai</title>
+    <title>Vicky</title>
 
     
     <style>
@@ -50,8 +50,8 @@
             
             position:absolute;
             top:57%;
-            left:50%;
-            transform:translate(-57%,-50%);
+            left:53%;
+            transform:translate(-57%,-53%);
             
         }
        #c::before{
@@ -59,13 +59,18 @@
             color:blue;
         }
         #c{
-            color:blue;
+            color:black;
             font-family: Arial, sans-serif;
             font-size: 15px;
             text-align:center;
         }
         
-        
+       .e{
+           position:absolute;
+           left:15%;
+           transorm:translate(,15%);
+       }
+    
         
     </style>
     
@@ -74,32 +79,52 @@
 </head>
 <body>
     <div class="birth">
-        <form id="h1" onsubmit="return handleSubmit(event)">
+        <form id="h11" onsubmit="return handleSubmit(event)">
             <h3 id="c" ><u>I'm Lucky To Have You!</u></h3>
             <label for="pass"><tt>MUNNI:</tt></label>
-            <input type="password" id="pass" placeholder="Happy Birthday My Gurl" font-style="sans-serif">
+            <input type="date" id="dates" placeholder="Happy Birthday My Gurl" font-style="sans-serif">
             <br><br>
             <button type="submit"><tt>I LOVE UH</tt></button>
+            <br><br><br><br><br><br><br>
+            <hr>
+            <div class="e">
+                <details>
+                    <summary>
+                      CLUE
+                    </summary>
+                   <h5 id="clue" style="color:blue;">Click On 'I Love You' For Clue! </h5>
+                </details>
+            </div><br><br><br><hr>
+            
+    
+            
+            
+           
         </form>
     </div>
 
     <script>
         function handleSubmit(event) {
             event.preventDefault();
-            var password = document.getElementById('pass').value;
-            var correctPassword = 'VICKY'; // Replace with your password
+            var password = document.getElementById('dates').value;
+            var correctPassword = '2022-03-20'; // Replace with your password
 
             console.log('Entered Password is:', password);
 
             if (password === correctPassword) {
                 window.location.href = 'index1.html';
             } else if (password === "") {
-                alert('NANNU MARCHIPOYAVA ??');
+                alert('When Did Our Journey Started? ');
             } else {
-                alert("CORRECT GA TYPE CHEYY");
+                alert("Did You Forget Me!?");
             }
-            document.getElementById('pass').value = '';
-        }
+        
+        
+       document.getElementById('dates').value = '';
+       
+       } 
+        
+        
     </script>
 
 </body>
